@@ -17,6 +17,7 @@
             --warning-color: #f39c12; /* Amarelo para Pendente */
             --background-color: #121212; /* Fundo Escuro */
             --card-bg: #1c1c1c; /* Fundo dos Cards */
+            --header-bg: #1a1a2e; /* NOVO: Azul Escuro para o cabeçalho */
             --text-color: #f8f8f8; /* Texto Claro */
             --shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
         }
@@ -48,12 +49,6 @@
         }
 
         /* Animação Pulse */
-        @keyframes pulse-upload {
-            0% { box-shadow: 0 0 0 0 rgba(0, 112, 209, 0.7); }
-            70% { box-shadow: 0 0 0 15px rgba(0, 112, 209, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(0, 112, 209, 0); }
-        }
-
         @keyframes pulse-green {
             0% { box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7); }
             70% { box-shadow: 0 0 0 15px rgba(39, 174, 96, 0); }
@@ -108,7 +103,7 @@
 
         /* Header */
         .header {
-            background-color: var(--card-bg);
+            background-color: var(--header-bg); /* NOVO: Azul Escuro */
             box-shadow: var(--shadow);
             padding: 15px 0;
             position: sticky;
@@ -123,9 +118,9 @@
             align-items: center;
         }
 
-        /* NOVO ESTILO PARA LOGO */
+        /* NOVO ESTILO PARA LOGO MAIOR */
         .logo img {
-            height: 40px; /* Altura da logo */
+            height: 60px; /* Aumentado o tamanho da logo */
             width: auto;
             vertical-align: middle;
         }
